@@ -1,56 +1,57 @@
 # Portfolio CV - K20 CNTT 20-04
 
-**Tác giả:** Mai Lâm Duy
+## Sản phẩm này là gì?
 
-**Mô tả:** CV cá nhân dạng website tĩnh, giới thiệu thông tin, kỹ năng, dự án, học tập và liên hệ. Trang có biểu mẫu HTML thực hành; biểu mẫu không gửi email và không lưu dữ liệu lên máy chủ.
+Website CV cá nhân của Mai Lâm Duy, sinh viên Công nghệ Thông tin, giới thiệu kỹ năng, dự án học tập, quá trình học tập và thông tin liên hệ.
 
-## Liên kết
+## Demo
 
-- **Mã nguồn:** [GitHub repository](https://github.com/duy200779/K20_Portfolio_CNTT20-04)
-- **Website:** [GitHub Pages](https://duy200779.github.io/K20_Portfolio_CNTT20-04/)
-- **Hồ sơ tác giả:** [github.com/duy200779](https://github.com/duy200779)
-- **Minh chứng:** website đã xuất bản và mã nguồn tại repository. Repo hiện không có ảnh chụp màn hình hoặc video minh chứng riêng.
+https://duy200779.github.io/K20_Portfolio_CNTT20-04/
 
-## Cấu trúc thư mục
+## Tính năng
 
-```text
-.
-├── index.html       # Trang CV chính
-├── ket-qua.html     # Trang kết quả của biểu mẫu
-├── README.md        # Hướng dẫn mở và kiểm tra sản phẩm
-├── AI_LOG.md        # Ghi nhận hỗ trợ AI và quyết định
-├── RELEASE_NOTES.md # Ghi chú bàn giao v7
-├── css/
-│   └── style.css    # Kiểu dáng và bố cục responsive
-└── assets/
-    ├── avatar.jpg
-    ├── avatar.svg
-    ├── du-an-1.svg
-    ├── du-an-2.svg
-    └── du-an-3.svg
-```
+- Xem thông tin giới thiệu, kỹ năng, ba dự án học tập, học tập và liên hệ.
+- Dùng menu hoặc nút **Xem dự án** để chuyển tới từng mục trên trang.
+- Gửi lời nhắn qua biểu mẫu HTML có kiểm tra các trường bắt buộc, định dạng email và độ dài nội dung; biểu mẫu chuyển tới trang kết quả thực hành.
+- Bố cục thích ứng với kích thước màn hình.
 
-## Chạy local
+## Cách mở
 
-Không cần cài thư viện. Mở PowerShell tại thư mục gốc của repo và chạy:
+1. Mở URL ở mục Demo.
+2. Chọn các mục trên thanh điều hướng hoặc cuộn trang để xem nội dung.
+3. Ở mục **Liên hệ**, có thể thử biểu mẫu với dữ liệu mẫu hợp lệ để mở trang kết quả. Đây chỉ là biểu mẫu thực hành: không gửi email và không lưu dữ liệu.
+
+Để chạy bản trong máy, mở PowerShell tại thư mục dự án và chạy:
 
 ```powershell
 py -m http.server 8000
 ```
 
-Nếu máy không có lệnh `py`, thử `python -m http.server 8000`. Mở <http://localhost:8000/> trong trình duyệt; nhấn `Ctrl+C` trong PowerShell để dừng máy chủ.
+Sau đó mở <http://localhost:8000/>. Nếu máy không có lệnh `py`, dùng `python -m http.server 8000`. Nhấn `Ctrl+C` trong PowerShell để dừng máy chủ.
 
-## Nguồn xuất bản
+## Cấu trúc thư mục
 
-Website được cung cấp qua GitHub Pages tại liên kết ở trên; mã nguồn nằm trong repository. Cấu hình nhánh và thư mục nguồn xuất bản cần được xác nhận trong **Settings → Pages** của repository, vì cấu hình này không được mô tả trong các tệp dự án.
+```text
+index.html       Trang CV chính
+ket-qua.html     Trang kết quả biểu mẫu
+css/             Kiểu dáng và bố cục responsive
+assets/          Ảnh đại diện và hình minh họa dự án
+docs/            Nhật ký AI và chỉ mục minh chứng
+```
 
-## Cách kiểm tra
+## Đã kiểm tra
 
-1. Mở trang chính và xem các mục Giới thiệu, Kỹ năng, Dự án, Học tập, Liên hệ; thử các liên kết điều hướng.
-2. Trong DevTools → **Network**, tải lại trang và xác nhận `css/style.css` cùng các ảnh trong `assets/` được tải. Đường dẫn CSS được khai báo tương đối là `css/style.css`.
-3. Thu nhỏ cửa sổ trình duyệt để kiểm tra bố cục responsive.
-4. Trong phần Liên hệ, thử gửi biểu mẫu khi để trống trường bắt buộc hoặc nhập email không hợp lệ để xem kiểm tra HTML5. Sau đó nhập dữ liệu mẫu hợp lệ để mở `ket-qua.html`.
-5. Biểu mẫu dùng `GET`: dữ liệu có thể xuất hiện trên URL. Chỉ dùng dữ liệu thử, không nhập thông tin nhạy cảm. Trang kết quả không gửi email và không lưu dữ liệu.
-6. Kiểm tra riêng trang `ket-qua.html`, nút quay lại, CSS và điều hướng về trang chính.
+Xem [docs/evidence-index.md](docs/evidence-index.md); hiện chưa có minh chứng kiểm thử được liệt kê tại đây. [docs/AI_LOG.md](docs/AI_LOG.md) ghi nhận đường dẫn stylesheet tương đối trong hai trang và stylesheet công khai trả về nội dung CSS, nhưng chưa xác nhận CSS được áp dụng trực quan sau khi tắt cache.
 
-Khi ghi nhận kết quả kiểm thử, phân biệt trạng thái phản hồi HTTP `304` (tài nguyên không đổi và có thể dùng bản cache) với việc stylesheet đã tải và được trình duyệt áp dụng đúng.
+## Hạn chế / Chưa kiểm tra
+
+- Chưa xác nhận CSS được áp dụng trực quan trên trình duyệt hoặc thử nghiệm trên thiết bị di động.
+- Chưa xác nhận cấu hình nguồn xuất bản trong GitHub Pages (**Settings → Pages**).
+- Biểu mẫu dùng `GET`, nên dữ liệu thử có thể xuất hiện trên URL; không nhập thông tin nhạy cảm.
+- Trang `ket-qua.html` còn tên “Việt Anh”, chưa thống nhất với trang chính.
+- `index.html` đang thiếu thẻ đóng `</head>` trước `<body>`; cần sửa và kiểm tra HTML.
+- Các liên kết dự án hiện là nội dung hiển thị, chưa phải liên kết bấm được tới mã nguồn.
+
+## Khai báo AI
+
+Xem [docs/AI_LOG.md](docs/AI_LOG.md) để biết yêu cầu, gợi ý, quyết định và trạng thái kiểm tra liên quan đến việc sử dụng AI.

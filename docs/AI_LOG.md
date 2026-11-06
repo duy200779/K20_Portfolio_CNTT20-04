@@ -1,5 +1,9 @@
 # AI_LOG
 
+| Ngày | Dùng AI làm gì | Em sửa lại gì |
+|---|---|---|
+| 2026-11-06 | Soạn README, ghi mục V8 trong CHANGELOG và điền mẫu bảng minh chứng. | Chưa ghi nhận chỉnh sửa thủ công; nội dung README và trạng thái kiểm tra được đối chiếu với các tệp hiện có, các phép thử chưa thực hiện vẫn để là chưa kiểm tra. |
+
 ## Hiện tượng và dữ kiện ban đầu
 
 - Hiện tượng được báo cáo: website không hiển thị CSS.
